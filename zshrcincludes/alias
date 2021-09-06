@@ -1,1 +1,9 @@
-alias pbcopy="xclip -selection c"
+case `uname` in
+  Darwin)
+    # mac os specific aliases
+  ;;
+  Linux)
+    # linux specific aliases
+    alias pbcopy="xclip -selection c"
+  ;;
+esac
