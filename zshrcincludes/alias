@@ -1,9 +1,4 @@
-case `uname` in
-  Darwin)
-    # mac os specific aliases
-  ;;
-  Linux)
-    # linux specific aliases
-    alias pbcopy="xclip -selection c"
-  ;;
-esac
+alias gitalias="cat ~/.oh-my-zsh/plugins/git/README.md | less"
+alias git_alias=gitalias
+alias git-alias=gitalias
+
