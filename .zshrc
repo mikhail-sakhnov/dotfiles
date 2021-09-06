@@ -3,7 +3,6 @@ source ${DOTFILES_DIR}/zshrcincludes/default
 source ${DOTFILES_DIR}/zshrcincludes/ohmyzsh
 
 SETTINGS=(export alias)
-
 for FILE in ${SETTINGS}
 do 
     source ${DOTFILES_DIR}/zshrcincludes/${FILE}

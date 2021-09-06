@@ -1,15 +1,15 @@
 #!/bin/bash
-set -x
 DOTS="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-
-echo $DOTS
-for DOTFILE in .zshrc .gitconfig 
+MODULES=(.gitconfig\ .zshrc)
+for DOTFILE in ${MODULES}
 do
-    echo "Installing ${DOTFILE}"
     TGT="${HOME}/${DOTFILE}"
-    touch ${TGT}
-    mv ${TGT} "${TGT}.old"
-    ln -s ${DOTS}/${DOTFILE} $TGT
+    if test -f "${TGT}"; then
+        echo "Skipping ${TGT}"
+    else 
+        echo "Installing ${DOTFILE} as ${TGT}"
+        ln -s ${DOTS}/${DOTFILE} $TGT
+    fi
 done
 
 
