@@ -1,7 +1,8 @@
 #!/bin/bash
-
+set -x
 DOTS="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+echo $DOTS
 for DOTFILE in .zshrc .gitconfig 
 do
     echo "Installing ${DOTFILE}"
