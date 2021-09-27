@@ -1,3 +1,8 @@
 [user]
-	email = msakhnov@skhnv.me
+	email = mikhail@skhnv.me
 	name = Mikhail Sakhnov
+
+[push]
+	default = current
+[init]
+	defaultBranch = main
