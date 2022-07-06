@@ -1,6 +1,7 @@
 # Common exports
 
+export K0S_GO_BUILD_CACHE=/tmp/cache
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=vim
-export PATH="${PATH}:${HOME}/bin"
+export PATH="${PATH}:${HOME}/bin:${HOME}/go/bin:/usr/local/go/bin"

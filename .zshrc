@@ -15,3 +15,5 @@ done;
 
 # os specific
 # source "${ZDOTDIR:-${HOME}}/.zshrc-`uname`"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

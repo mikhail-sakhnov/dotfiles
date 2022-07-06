@@ -1,4 +1,4 @@
 alias gitalias="cat ~/.oh-my-zsh/plugins/git/README.md | less"
 alias git_alias=gitalias
 alias git-alias=gitalias
-
+alias ack="ack --ignore-dir=vendor --ignore-dir=build"
