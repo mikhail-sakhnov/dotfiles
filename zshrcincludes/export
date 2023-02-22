@@ -1,6 +1,6 @@
 # Common exports
 
-export K0S_GO_BUILD_CACHE=/tmp/cache
+export K0S_GO_BUILD_CACHE=${HOME}/.k0scache
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=vim
