@@ -3,3 +3,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git docker kubectl)
 
 source $ZSH/oh-my-zsh.sh
+
+# on mac default uname -i fails and I don't have intel macs
+export ARCH=`(uname -i) 2> /dev/null || echo mac_arm`
+export SUFFIX=${HOST}/${ARCH}
+PROMPT+=' $fg_bold[red][$SUFFIX]$reset_color '
